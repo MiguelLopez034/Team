@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-font: "Montserrat", sans-serif;
+    --primary-color: #000000;
+    --secondary-color: #ff0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#principal {
+    padding: 100px 0;
+}
+
+
+.fila_section_one {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.container_title {
+    /* background: green; */
+    width: 100%;
+}
+
+.container_title h2,
+.container_title h1 {
+    
+    font-family: var(--primary-font);
+    font-weight: 600;
+}
+
+.container_title h2 {
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.container_title h1 {
+    font-size: 54px;
+    color: var(--primary-color);
+}
+
+.container_parrafo {
+    /* background: violet; */
+    width: 100%;
+}
+
+.container_parrafo p {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: #757575;
+}
+
+#cards_team {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 50px;
+    column-gap: 80px;
+    padding-top: 100px;
+}
+
+.card {
+    width: 299px;
+    background: #F6F4F4;
+    border-radius: 20px 20px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.card:hover {
+    box-shadow: 1px 2px 4px 3px rgba(89, 0, 255, 0.64);
+}
+.card:hover i {
+    color: var(--secondary-color);
+}
+
+.info_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 20px 0;
+}
+
+
+.info_card h3{
+    font-family: var(--primary-font);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.info_card h4 {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+.social_media_card {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.social_media_card a {
+    width: 30px;
+    height: 30px;
+    color: #959595;
+    cursor: pointer;
+}
+
+
+.by_section {
+    width: 80%;
+    padding-top: 4em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+}
+
+.by_section h3 {
+    color: var(--secondary-color);
+}
+
+.by_section h2 {
+    color: var(--primary-color)
+}
+
+
+/* Pantallas medianas responsive */
+
+
+@media (max-width: 1024px) {
+
+    #principal {
+        padding: 50px 0;
+    }
+
+    .fila_section_one {
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+    }
+
+    .container_title h2 {
+        font-size: 20px;
+    }
+    
+    .container_title h1 {
+        font-size: 44px;
+    }
+
+    .container_parrafo p {
+        font-size: 18px;
+    }
+
+    #cards_team {
+        gap: 50px;
+        padding-top: 40px;
+        width: 90%;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .by_section {
+        width: 90%; 
+    }
+}
+
+/* Pantallas pequeñas responsive */
+
+@media (max-width: 640px) {
+
+    .container_title h2 {
+        font-size: 15px;
+    }
+    
+    .container_title h1 {
+        font-size: 34px;
+    }
+
+    .container_parrafo p {
+        font-size: 15px;
+    }
+
+    .by_section h2 {
+        font-size: 22px;
+    }
+}
